@@ -13,6 +13,7 @@ body {
   width: auto;
   height: auto;
   color: white;
+  text-shadow: 2px 2px 5px black;
 }
 
 .fondoBody .imgfondo {
@@ -51,15 +52,21 @@ body {
   color: #fcfcfc;
   font-size: 30px;
   font-family: lora;
+  text-shadow: 2px 2px 5px black;
 }
+
 .titulo {
   font-size: 70px;
   color: #ffffff;
   position: sticky;
   top: 0;
   padding: 20px;
-  /* text-shadow: 7px 3px 0px rgba(20, 33, 22, 0.526); */
+  font-family: Garden Of Heaven Script;
   z-index: 101;
+  text-shadow: 2px 2px 5px black;
+}
+.titulo span {
+  text-shadow: 2px 2px 5px black;
 }
 
 .contenedorTarjeta2 {
@@ -80,6 +87,9 @@ body {
   color: #ffffff;
   font-family: Lora;
   font-size: 50px;
+}
+.contenedorText-2 h3 {
+  text-shadow: 2px 2px 5px black;
 }
 
 .datos {
@@ -246,6 +256,7 @@ body {
   margin-left: 14px;
   color: whitesmoke;
   font-family: lora;
+  text-shadow: none;
 }
 .sol {
   margin-top: 10px;
@@ -285,4 +296,17 @@ body {
 } */
 .dressCode-container div img {
   width: 100px;
+}
+.hora {
+  font-size: 30px;
+}
+@keyframes blink {
+  50% {
+    text-shadow: 2px 2px 5px white;
+    opacity: 0.33;
+  }
+}
+
+.blink {
+  animation: blink 0.5s;
 }
